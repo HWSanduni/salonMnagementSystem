@@ -19,7 +19,7 @@ public class CustomerController {
     public void saveCustomer(@RequestBody CustomerDTO dto){
         customerService.saveCustomer(dto);
 
-        System.out.println("123");
+       
 
         System.out.println("Sanduni");
 
