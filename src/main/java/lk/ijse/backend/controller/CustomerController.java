@@ -18,6 +18,7 @@ public class CustomerController {
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public void saveCustomer(@RequestBody CustomerDTO dto){
         customerService.saveCustomer(dto);
+        System.out.println("Sanduni");
 
     }
 
