@@ -20,6 +20,7 @@ public class SaloonServiceController {
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public void addService(@RequestBody SaloonServiceDTO dto) {
         saloonServiceService.addService(dto);
+        System.out.println("CustomerSave"+dto);
 
     }
 
